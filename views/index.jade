@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	div.container
+		h1.title
+			i.fa.fa-glass
+			i.fa.fa-glass
+			i.fa.fa-glass
+			|  Plans Tonight 
+			i.fa.fa-glass
+			i.fa.fa-glass
+			i.fa.fa-glass
+		div.row
+			div.col-xs-10
+				input.form-control#search(placeholder='Where are you?')
+			div.col-xs-2
+				button.btn.btn-primary.btn-go Go
+		div.content
+			div.jumbotron.contentArea
+				img.contentIcon(src='https://s3-media4.fl.yelpcdn.com/bphoto/DPrMKmdf_igzdwWbqE5WnQ/ms.jpg')
+				div
+					div
+						a(href='http://www.yelp.com/biz/hot-sauce-and-panko-san-francisco?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=y7SKIMJa7mTfadj_gocnDA', target='_blank')
+							span.contentTitle Hot Sauce and Panko
+						|  
+						img(src='https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png')
+						|  
+						button.goingBtn.btn.btn-success 0 Going
+					p.description "It was a cold SF afternoon, colder than usual. I longed to cure a Sakai bomb hangover I had acquired the night before. I had lost count of how many drinks I..."
+			div.jumbotron.contentArea
+				img.contentIcon(src='https://s3-media4.fl.yelpcdn.com/bphoto/DPrMKmdf_igzdwWbqE5WnQ/ms.jpg')
+				div
+					div
+						a(href='http://www.yelp.com/biz/hot-sauce-and-panko-san-francisco?utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=y7SKIMJa7mTfadj_gocnDA')
+							span.contentTitle Hot Sauce and Panko
+						|  
+						img(src='https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png')
+						|  
+						button.goingBtn.btn.btn-success 0 Going
+					p.description "It was a cold SF afternoon, colder than usual. I longed to cure a Sakai bomb hangover I had acquired the night before. I had lost count of how many drinks I..."
+	script(src='/javascripts/index.js')

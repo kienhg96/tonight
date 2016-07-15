@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='/third-party/jquery-1.12.4.min.js')
+		script(src='/third-party/bootstrap/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/third-party/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/third-party/font-awesome/css/font-awesome.min.css')
+	body
+		nav.navbar.navbar-default
+			div.container-fluid
+				div.navbar-header
+					button.navbar-toggle(data-toggle='collapse', data-target='#myNavbar')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='/') 
+						i.fa.fa-glass 
+						|  Tonight
+				div.collapse.navbar-collapse#myNavbar
+					ul.nav.navbar-nav.navbar-right
+						if user
+							li
+								a.userAnchor(href='https://twitter.com/intent/user?user_id=' + user.id, target='_blank')
+									img.userIcon(src= user.icon, alt='User Image')
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown') Hi, #{user.name} 
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href='/logout') Logout
+						else 
+							li
+								a(href='/auth', target='_blank') 
+									i.fa.fa-sign-in  
+									|  Login with Twitter 
+									i.fa.fa-twitter
+	block content
+	div.panel-footer
+		span.footer A Javascript Fullstack Application by Hoang Kien

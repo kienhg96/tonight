@@ -1,0 +1,53 @@
+body {
+	background-color: rgb(240, 240, 240)!important;
+}
+.userIcon {
+	border-radius: 10px; 
+}
+.userAnchor {
+	padding: 0 0 0 0 !important;
+}
+.title {
+	text-align: center;
+	color: rgb(50,50,50);
+	font-size: 50px;
+	font-family: Times;
+	margin-bottom: 30px;
+}
+.btn-go {
+	width: 100%;
+}
+.panel-footer {
+	margin-top: 40px;
+	text-align: center;
+}
+.footer {
+	color: rgb(100,100,100);
+}
+.content{
+	margin-top: 20px;
+}
+.contentIcon{
+	float: left;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.contentArea {
+	display: inline-block;
+	width: 100%;
+	padding: 5px 5px 5px 5px !important;
+	background-color: rgb(250, 250, 250) !important;
+	box-shadow: 5px 5px 5px rgb(170, 170, 170);
+	border: 1px solid rgb(220, 220, 220);
+}
+.contentTitle{
+	font-weight: bold;
+}
+.goingBtn {
+
+}
+.description {
+	font-family: Times;
+	font-size: 18px !important;
+	font-style: italic;
+}
