@@ -19,7 +19,7 @@ html
 						i.fa.fa-glass 
 						|  Tonight
 				div.collapse.navbar-collapse#myNavbar
-					ul.nav.navbar-nav.navbar-right
+					ul.nav.navbar-nav.navbar-right.user
 						if user
 							li
 								a.userAnchor(href='https://twitter.com/intent/user?user_id=' + user.id, target='_blank')
@@ -32,10 +32,11 @@ html
 										a(href='/logout') Logout
 						else 
 							li
-								a(href='/auth', target='_blank') 
+								a.auth(href='#') 
 									i.fa.fa-sign-in  
 									|  Login with Twitter 
 									i.fa.fa-twitter
 	block content
 	div.panel-footer
-		span.footer A Javascript Fullstack Application by Hoang Kien
+		span.footer A Javascript Fullstack Application by Hoang Kien | 
+			a(href='https://github.com/kienhg96/tonight', target="_blank") Github
