@@ -64,6 +64,8 @@ $(document).ready(function(){
 	var search = function(){
 		console.log('search');
 		$('.content').empty();
+		btnSearch.html('Searching...');
+		btnSearch.prop('disabled', true);
 		currentSearch = txtSearch.val();
 		$.post('/search', {search: currentSearch}, function(data){
 			console.log(data);
@@ -72,6 +74,8 @@ $(document).ready(function(){
 			}
 			arr = data;
 			$('.goingBtn').click(goingClick);
+			btnSearch.prop('disabled', false);
+			btnSearch.html('Go');
 		});
 	}
 	btnSearch.click(function(){
